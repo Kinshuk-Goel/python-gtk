@@ -17,7 +17,7 @@ class MyWindow(Gtk.Window):
         self.box = Gtk.Box(spacing=6)
         self.add(self.box)
 
-        self.button = Gtk.Button(label="Click Here")
+        self.button = Gtk.Button(label="Trigger GTK Notification")
         self.button.set_valign(Gtk.Align.CENTER)
         self.button.connect("clicked", self.on_button_clicked)
         self.box.pack_start(self.button, True, True, 0)
